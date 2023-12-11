@@ -20,11 +20,11 @@ Route::get('/', function () {
 
 Route::get('/auth', [AuthController::class, 'auth']);
 
-Route::get('/auth_user', [AuthController::class, 'auth_user']);
+Route::post('/auth_user', [AuthController::class, 'auth_user']);
 
 Route::get('/register', [AuthController::class, 'register']);
 
-Route::get('/register_user', [AuthController::class, 'register_user']);
+Route::post('/register_user', [AuthController::class, 'register_user']);
 
 Route::get('/exit', [AuthController::class, 'exit']);
 
@@ -46,13 +46,16 @@ Route::get('/order', function () {
 });
 
 
-
-Route::get('/admin/applications', function () {
-    return view('admin.applications');
+Route::group(['namespace' => 'Admin', 'middleware' => 'admin'], function () {
+    Route::get('/admin/applications', function () {
+        return view('admin.applications');
+    });
+    
+    Route::get('/admin/adminArticle', function () {
+        return view('admin.adminArticle');
+    });
 });
 
-Route::get('/admin/adminArticle', function () {
-    return view('admin.adminArticle');
-});
+
 
 

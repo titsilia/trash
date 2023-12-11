@@ -2,7 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
+
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\Hash;
 
 class AuthController extends Controller
 {
@@ -40,20 +45,28 @@ class AuthController extends Controller
     public function register_user(Request $request) {
         $request->validate([
             "email"=> "required|unique:users|email",
+            "surname"=> "required",
             "name"=> "required",
+            "patronymic"=> "required",
+            "telephone"=> "required",
             "password"=> "required",
-            "confirm_password"=>"required|same:password"
+            // "confirm_password"=>"required|same:password"
             ],
             [ 
                 "name.required" => "Поле обязательно для заполнения!",
+                "surname.required" => "Поле обязательно для заполнения!",
+                "patronymic.required" => "Поле обязательно для заполнения!",
+
+                "telephone.required" => "Поле обязательно для заполнения!",
+                "telephone.number" => "Только цифры!",
 
                 "email.required" => "Поле обязательно для заполнения!",
                 "email.email" => "Введите корректный email",
                 "email.unique" => "Данный email уже занят",
 
                 "password.required" => "Поле обязательно для заполнения!",
-                "confirm_password.required" => "Поле обязательно для заполнения!",
-                "confirm_password.same" => "Пароли не совпадают",
+                // "confirm_password.required" => "Поле обязательно для заполнения!",
+                // "confirm_password.same" => "Пароли не совпадают",
         ]);
 
 
@@ -61,7 +74,11 @@ class AuthController extends Controller
 
         $user_create= User::create([
             "email"=> $userInfo["email"],
+            "surname"=> $userInfo["surname"],
             "name"=> $userInfo["name"],
+            "telephone"=> $userInfo["telephone"],
+            "patronymic"=> $userInfo["patronymic"],
+            "role_id"=> '2',
             "password"=> Hash::make($userInfo["password"]),
         ]);
 
