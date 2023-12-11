@@ -49,16 +49,16 @@
                                 <div class="order__time">
                                     <div class="order__type_title">Время доставки:</div>
                                     <div class="time__buttons-one">
-                                        <input type="button" class="time__button" value="8:00">
-                                        <input type="button" class="time__button" value="10:00">
-                                        <input type="button" class="time__button" value="12:00">
-                                        <input type="button" class="time__button" value="14:00">
+                                        <input type="button" name="t_button" class="time__button" value="8:00">
+                                        <input type="button" name="t_button" class="time__button" value="10:00">
+                                        <input type="button" name="t_button" class="time__button" value="12:00">
+                                        <input type="button" name="t_button" class="time__button" value="14:00">
                                     </div>
                                     <div class="time__buttons-two">
-                                        <input type="button" class="time__button" value="16:00">
-                                        <input type="button" class="time__button" value="18:00">
-                                        <input type="button" class="time__button" value="20:00">
-                                        <input type="button" class="time__button" value="22:00">
+                                        <input type="button" name="t_button" class="time__button" value="16:00">
+                                        <input type="button" name="t_button" class="time__button" value="18:00">
+                                        <input type="button" name="t_button" class="time__button" value="20:00">
+                                        <input type="button" name="t_button" class="time__button" value="22:00">
                                     </div>
                                 </div>
 

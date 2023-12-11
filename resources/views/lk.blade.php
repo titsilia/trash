@@ -65,7 +65,7 @@
                                         </div>
                                         <div class="article-text-sub">
                                             <p class="applications__text text-gray type">Изменить пароль:</p>
-                                            <input class="auth__inputs_input" placeholder="Повторите пароль" type="password" name="password">
+                                            <input class="auth__inputs_input" placeholder="Повторите пароль" type="password" name="repeat_password">
                                         </div>
 
                                         <div class="article-inputs-short">

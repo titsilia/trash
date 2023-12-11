@@ -38,15 +38,15 @@
             <div class="applications__item">
                 <form action="">
                     <div>
-                        <input type="checkbox" id="scales" name="scales" />
+                        <input type="checkbox" id="scales" name="aply" />
                         <label for="scales">Принято</label>
                     </div>
                     <div>
-                        <input type="checkbox" id="horns" name="horns" />
+                        <input type="checkbox" id="horns" name="cancel" />
                         <label for="horns">Отклонено</label>
                     </div>
                     <div>
-                        <input type="checkbox" id="horns" name="horns" />
+                        <input type="checkbox" id="horns" name="done" />
                         <label for="horns">Выполнено</label>
                     </div>
                 </form>
@@ -83,15 +83,15 @@
             <div class="applications__item">
                 <form action="">
                     <div>
-                        <input type="checkbox" id="scales" name="scales" />
+                        <input type="checkbox" id="scales" name="aply" />
                         <label for="scales">Принято</label>
                     </div>
                     <div>
-                        <input type="checkbox" id="horns" name="horns" />
+                        <input type="checkbox" id="horns" name="cancel" />
                         <label for="horns">Отклонено</label>
                     </div>
                     <div>
-                        <input type="checkbox" id="horns" name="horns" />
+                        <input type="checkbox" id="horns" name="done" />
                         <label for="horns">Выполнено</label>
                     </div>
             </form>
@@ -128,15 +128,15 @@
             <div class="applications__item">
                 <form action="">
                     <div>
-                        <input type="checkbox" id="scales" name="scales" />
+                        <input type="checkbox" id="scales" name="aply" />
                         <label for="scales">Принято</label>
                     </div>
                     <div>
-                        <input type="checkbox" id="horns" name="horns" />
+                        <input type="checkbox" id="horns" name="cancel" />
                         <label for="horns">Отклонено</label>
                     </div>
                     <div>
-                        <input type="checkbox" id="horns" name="horns" />
+                        <input type="checkbox" id="horns" name="done" />
                         <label for="horns">Выполнено</label>
                     </div>
                 </form>

@@ -11,12 +11,12 @@
             <div class="article-text">Добавить статью:</div>
             <div class="article-border">
                 <form action="">
-                    <div class="auth__inputs_input"><input class="auth__inputs_input" placeholder="Название" type="text">
+                    <div class="auth__inputs_input"><input class="auth__inputs_input" placeholder="Название" name="title" type="text">
                     </div>
-                    <div class="auth__inputs_input"><input class="auth__inputs_input" placeholder="Добавить фото"
+                    <div class="auth__inputs_input"><input class="auth__inputs_input" name="photo" placeholder="Добавить фото"
                             type="file">
                     </div>
-                    <div class="auth__inputs_input"><input class="auth__inputs_input" placeholder="Контент" type="text">
+                    <div class="auth__inputs_input"><input class="auth__inputs_input" placeholder="Контент" name="content" type="text">
                     </div>
                     <button class="article-button text-black">Добавить</button>
                 </form>
@@ -69,16 +69,16 @@
                     </div>
                     <form action="">
                         <div class="auth__inputs_input"><input class="auth__inputs_input" placeholder="Название"
-                                type="text">
+                                type="text" name="title">
                         </div>
                         <div class="auth__inputs_input"><input class="auth__inputs_input" placeholder=""
-                                type="file">
+                                type="file" name="photo">
                         </div>
                         <div class="auth__inputs_input"><input class="auth__inputs_input" placeholder="Контент"
-                                type="text">
+                                type="text" name="content">
                         </div>
-                        <button class="article-button text-black">Сохранить изменения</button>
-                        <button class="article-button text-black">Удалить</button>
+                        <button class="article-button text-black" type="submit">Сохранить изменения</button>
+                        <button class="article-button text-black" type="submit">Удалить</button>
                     </form>
                 </div>
             </div>
