@@ -1,13 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Опа, мусорок</title>
-    <link rel="stylesheet" href="../css/style.css">
-</head>
+<x-head/>
 
 <body>
     <x-header-auth />
@@ -17,20 +11,22 @@
                 <div class="article__title text-white">Оформление Заказа</div>
                 <div class="order__info">
                     <div class="order__info_main text-white">
-                        <div class="order__inputs_input "><input class="order__inputs_input order-ph"placeholder="Фамилия" type="text"></div>
-                        <div class="order__inputs_input"><input class="order__inputs_input order-ph" placeholder="Имя"type="text"></div>
-                        <div class="order__inputs_input"><input class="order__inputs_input order-ph"placeholder="Отчество" type="text"></div>
-                        <div class="order__inputs_input order-bt"><input class="order__inputs_input order-ph"placeholder="+(700)202-22-92" type="text"></div>
-                        <div class="order__inputs_input"><input class="order__inputs_input order-ph"placeholder="nazgulenok78@gmail.com" type="text"></div>
-                    </div>
-                    <div class="order__info_side">
-                        <div class="order__inputs_input "><input class="order__inputs_input order-ph"placeholder="Улица" type="text">
-                        </div>
-                        <div class="order__inputs_aside">
-                            <div class="order__inputs_side "><input class="order__inputs_side order-ph"placeholder="Дом" type="text"></div>
-                            <div class="order__inputs_side "><input class="order__inputs_side order-ph"placeholder="Подъезд" type="text"></div>
-                            <div class="order__inputs_side "><input class="order__inputs_side order-ph"placeholder="Этаж" type="text"></div>
-                            <div class="order__inputs_side "><input class="order__inputs_side order-ph" placeholder="Кв"type="text"></div>
+                        <form method="POST" action="">
+                            <div class="order__inputs_input"><input class="order__inputs_input order-ph"placeholder="Фамилия" name="surname" type="text"></div>
+                            <div class="order__inputs_input"><input class="order__inputs_input order-ph" placeholder="Имя" name="name" type="text"></div>
+                            <div class="order__inputs_input"><input class="order__inputs_input order-ph"placeholder="Отчество" name="patronymic" type="text"></div>
+                            <div class="order__inputs_input order-bt"><input class="order__inputs_input order-ph"placeholder="+(700)202-22-92" name="phone" type=""></div>
+                            <div class="order__inputs_input"><input class="order__inputs_input order-ph"placeholder="nazgulenok78@gmail.com" name="email" type="email"></div>
+                            </div>
+                             <div class="order__info_side">
+                            <div class="order__inputs_input "><input class="order__inputs_input order-ph"placeholder="Улица" name="street" type="text">
+                            </div>
+                            <div class="order__inputs_aside">
+                                <div class="order__inputs_side"><input class="order__inputs_side order-ph"placeholder="Дом" name="home" type="text"></div>
+                                <div class="order__inputs_side"><input class="order__inputs_side order-ph"placeholder="Подъезд" name="entrance" type="text"></div>
+                                <div class="order__inputs_side"><input class="order__inputs_side order-ph"placeholder="Этаж" name="floor" type="text"></div>
+                                <div class="order__inputs_side"><input class="order__inputs_side order-ph" placeholder="Кв" name="apartment" type="text"></div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -40,12 +36,14 @@
                         <div class="order__type_title">Тип мусора:</div>
                         <div class="order__title_checkbox text-white">
                             <div class="glass-carton">
-                                <div><input type="checkbox" id="glass" name="glass" /><label for="scales">Стекло</label></div>
-                                <div><input type="checkbox" id="carton" name="carton" /><label for="horns">Картон</label></div>
-                            </div>
-                            <div class="plastic-organika">
-                                <div><input type="checkbox" id="plastic" name="plastic" /><label for="scales">Пластик</label></div>
-                                <div><input type="checkbox" id="organika" name="organika" /><label for="horns">Органика</label></div>
+                                <form method="POST" action="">
+                                        <div><input type="checkbox" id="glass" name="glass" /><label for="scales">Стекло</label></div>
+                                        <div><input type="checkbox" id="carton" name="carton" /><label for="horns">Картон</label></div>
+                                    </div>
+                                    <div class="plastic-organika">
+                                        <div><input type="checkbox" id="plastic" name="plastic" /><label for="scales">Пластик</label></div>
+                                        <div><input type="checkbox" id="organika" name="organika" /><label for="horns">Органика</label></div>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -69,12 +67,12 @@
                 </div>
                 <div class="comment-price">
                     <div class="input__comment">
-                        <textarea class="tacontent" name="" id="" cols="30" rows="10" placeholder="Оставьте комментарий"></textarea>
+                        <textarea class="tacontent" name="comment" id="" cols="30" rows="10" placeholder="Оставьте комментарий"></textarea>
                     </div>
                     <div class="button__price">
                         <p class="text-white subtitle-low">Цена</p>
                         <p class="text-white subtitle">4000 р.</p>
-                        <button class="order__button subtitle">Перейти к оплате</button>
+                        <button class="order__button subtitle" type="submit">Перейти к оплате</button>
                     </div>
                 </div>
             </div>

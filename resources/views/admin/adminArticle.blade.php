@@ -1,13 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Опа, мусорок</title>
-    <link rel="stylesheet" href="../css/style.css">
-</head>
+<x-head/>
 
 <body>
     <x-header-admin />
@@ -44,17 +38,19 @@
                     <div class="article-text-sub">
                         <p class="applications__text text-gray type">Редактировать:</p>
                     </div>
-                    <div class="auth__inputs_input"><input class="auth__inputs_input" placeholder="Название"
-                            type="text">
-                    </div>
-                    <div class="auth__inputs_input"><input class="auth__inputs_input" placeholder=""
-                            type="file">
-                    </div>
-                    <div class="auth__inputs_input"><input class="auth__inputs_input" placeholder="Контент"
-                            type="text">
-                    </div>
-                    <button class="article-button text-black">Сохранить изменения</button>
-                    <button class="article-button text-black">Удалить</button>
+                    <form action="">
+                        <div class="auth__inputs_input"><input class="auth__inputs_input" name="title" placeholder="Название"
+                                type="text">
+                        </div>
+                        <div class="auth__inputs_input"><input class="auth__inputs_input" name="photo" placeholder=""
+                                type="file">
+                        </div>
+                        <div class="auth__inputs_input"><input class="auth__inputs_input" name="content" placeholder="Контент"
+                                type="text">
+                        </div>
+                        <button class="article-button text-black" type="submit">Сохранить изменения</button>
+                        <button class="article-button text-black" type="submit">Удалить</button>
+                    </form>
                 </div>
 
                 <div class="article-border">
@@ -69,17 +65,19 @@
                     <div class="article-text-sub">
                         <p class="applications__text text-gray type">Редактировать:</p>
                     </div>
-                    <div class="auth__inputs_input"><input class="auth__inputs_input" placeholder="Название"
-                            type="text">
-                    </div>
-                    <div class="auth__inputs_input"><input class="auth__inputs_input" placeholder=""
-                            type="file">
-                    </div>
-                    <div class="auth__inputs_input"><input class="auth__inputs_input" placeholder="Контент"
-                            type="text">
-                    </div>
-                    <button class="article-button text-black">Сохранить изменения</button>
-                    <button class="article-button text-black">Удалить</button>
+                    <form action="">
+                        <div class="auth__inputs_input"><input class="auth__inputs_input" placeholder="Название"
+                                type="text">
+                        </div>
+                        <div class="auth__inputs_input"><input class="auth__inputs_input" placeholder=""
+                                type="file">
+                        </div>
+                        <div class="auth__inputs_input"><input class="auth__inputs_input" placeholder="Контент"
+                                type="text">
+                        </div>
+                        <button class="article-button text-black">Сохранить изменения</button>
+                        <button class="article-button text-black">Удалить</button>
+                    </form>
                 </div>
             </div>
         </div>

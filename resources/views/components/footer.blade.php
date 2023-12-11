@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Опа, мусорок</title>
-    <link rel="stylesheet" href="../css/style.css">
-</head>
-
-<div>
     <footer class="footer center">
         <div class="header__nav_img"><a href="#"><img src="../images/logo.png" alt=""></a></div>
         <div class="footer__content">
@@ -23,4 +13,3 @@
             <a href="" class="footer__content_link"><img class="footer__content_img" src="../images/footerbutton1.png" alt=""></a>
         </div>
     </footer>
-</div>

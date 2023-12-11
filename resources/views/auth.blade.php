@@ -1,12 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Опа, мусорок</title>
-    <link rel="stylesheet" href="../css/style.css">
-</head>
+<x-head/>
 
 <body>
     <x-header/>
@@ -22,17 +17,17 @@
                 <div class="auth__form_text">Еще нет аккаунта?<a href="/register">Зарегистрируйтесь!</a></div>
                 <div class="auth__inputs_border">
                     <div class="auth__inputs_input">
-                        <input class="auth__inputs_input"placeholder="nazgulenok78@gmail.com" type="text" name="email">
+                        <input class="auth__inputs_input" placeholder="nazgulenok78@gmail.com" type="email" name="email">
                         @error("email")
-                            <div class="alert alert-damger" role="alert">
+                            <div class="alert alert-danger" role="alert">
                                 {{$message}}
                             </div>
                         @enderror
                     </div>
                     <div class="auth__inputs_input">
-                        <input class="auth__inputs_input" placeholder="Пароль"type="text" name="password">
+                        <input class="auth__inputs_input" placeholder="Пароль" type="password" name="password">
                         @error("password")
-                            <div class="alert alert-damger" role="alert">
+                            <div class="alert alert-danger" role="alert">
                                 {{$message}}
                             </div>
                         @enderror

@@ -1,13 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Опа, мусорок</title>
-    <link rel="stylesheet" href="../css/style.css">
-</head>
+<x-head/>
 
 <body>
     <x-header-auth />
@@ -30,12 +24,14 @@
                 <div class="article-text-sub">
                     <p class="applications__text text-gray type">Редактировать:</p>
                 </div>
-                <div class="auth__inputs_input"><input class="auth__inputs_input" placeholder="Фамилия" type="text"></div>
-                <div class="auth__inputs_input"><input class="auth__inputs_input" placeholder="Имя" type="text"></div>
-                <div class="auth__inputs_input"><input class="auth__inputs_input" placeholder="Отчество" type="text"></div>
-                <div class="auth__inputs_input"><input class="auth__inputs_input" placeholder="+(700)202-22-92"type="text"></div>
-                <div class="auth__inputs_input"><input class="auth__inputs_input" placeholder="nazgulenok78@gmail.com"type="text"></div>
-                <button class="article-button text-black">Сохранить изменения</button>
+                <form method="POST" action="">
+                <div class="auth__inputs_input"><input class="auth__inputs_input" placeholder="Фамилия" name="surname" type="text"></div>
+                <div class="auth__inputs_input"><input class="auth__inputs_input" placeholder="Имя" name="name" type="text"></div>
+                <div class="auth__inputs_input"><input class="auth__inputs_input" placeholder="Отчество" name="patronymic" type="text"></div>
+                <div class="auth__inputs_input"><input class="auth__inputs_input" placeholder="+(700)202-22-92" name="phone" type="tel"></div>
+                <div class="auth__inputs_input"><input class="auth__inputs_input" placeholder="nazgulenok78@gmail.com" name="email" type="email"></div>
+                <button class="article-button text-black" type="submit">Сохранить изменения</button>
+            </form>
             </div>
 
             <div class="lk-box-side">
@@ -48,14 +44,16 @@
                         <div class="article-text-sub">
                             <p class="applications__text text-gray type">Редактировать:</p>
                         </div>
-                        <div class="auth__inputs_input"><input class="auth__inputs_input" placeholder="Улица"type="text"></div>
+                        <form method="POST" action="">
+                        <div class="auth__inputs_input"><input class="auth__inputs_input" placeholder="Улица" name="street" type="text"></div>
                         <div class="article-inputs-short">
-                            <div class="auth__inputs_input short"><input class="auth__inputs_input short"placeholder="Дом" type="text"></div>
-                            <div class="auth__inputs_input short"><input class="auth__inputs_input short"placeholder="Подъезд" type="text"></div>
-                            <div class="auth__inputs_input short"><input class="auth__inputs_input short"placeholder="Этаж" type="text"></div>
-                            <div class="auth__inputs_input short"><input class="auth__inputs_input short"placeholder="Кв" type="text"></div>
+                            <div class="auth__inputs_input short"><input class="auth__inputs_input short"placeholder="Дом" name="home" type="text"></div>
+                            <div class="auth__inputs_input short"><input class="auth__inputs_input short"placeholder="Подъезд" name="entrance" type="text"></div>
+                            <div class="auth__inputs_input short"><input class="auth__inputs_input short"placeholder="Этаж" name="floor" type="text"></div>
+                            <div class="auth__inputs_input short"><input class="auth__inputs_input short"placeholder="Кв" name="apartment" type="text"></div>
                         </div>
-                        <button class="article-button text-black">Сохранить изменения</button>
+                        <button class="article-button text-black" type="submit">Сохранить изменения</button>
+                    </form>
                     </div>
 
                     <div class="lk-box">
@@ -68,14 +66,16 @@
                             <div class="article-text-sub">
                                 <p class="applications__text text-gray type">Редактировать:</p>
                             </div>
-                            <div class="auth__inputs_input"><input class="auth__inputs_input" placeholder="Улица"type="text"></div>
+                            <div class="auth__inputs_input"><input class="auth__inputs_input" placeholder="Улица" name="street" type="text"></div>
                             <div class="article-inputs-short">
-                                <div class="auth__inputs_input short"><input class="auth__inputs_input short"placeholder="Дом" type="text"></div>
-                                <div class="auth__inputs_input short"><input class="auth__inputs_input short"placeholder="Подъезд" type="text"></div>
-                                <div class="auth__inputs_input short"><input class="auth__inputs_input short"placeholder="Этаж" type="text"></div>
-                                <div class="auth__inputs_input short"><input class="auth__inputs_input short"placeholder="Кв" type="text"></div>
+                                <form method="POST" action="">
+                                <div class="auth__inputs_input short"><input class="auth__inputs_input short"placeholder="Дом" name="home" type="text"></div>
+                                <div class="auth__inputs_input short"><input class="auth__inputs_input short"placeholder="Подъезд" name="entrance" type="text"></div>
+                                <div class="auth__inputs_input short"><input class="auth__inputs_input short"placeholder="Этаж" name="floor" type="text"></div>
+                                <div class="auth__inputs_input short"><input class="auth__inputs_input short"placeholder="Кв" name="apartment" type="text"></div>
                             </div>
-                            <button class="article-button text-black">Сохранить изменения</button>
+                            <button class="article-button text-black" type="submit">Сохранить изменения</button>
+                        </form>
                         </div>
                     </div>
                 </div>
