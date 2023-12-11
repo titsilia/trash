@@ -10,14 +10,16 @@
         <div class="article-box">
             <div class="article-text">Добавить статью:</div>
             <div class="article-border">
-                <div class="auth__inputs_input"><input class="auth__inputs_input" placeholder="Название" type="text">
-                </div>
-                <div class="auth__inputs_input"><input class="auth__inputs_input" placeholder="Добавить фото"
-                        type="file">
-                </div>
-                <div class="auth__inputs_input"><input class="auth__inputs_input" placeholder="Контент" type="text">
-                </div>
-                <button class="article-button text-black">Добавить</button>
+                <form action="">
+                    <div class="auth__inputs_input"><input class="auth__inputs_input" placeholder="Название" type="text">
+                    </div>
+                    <div class="auth__inputs_input"><input class="auth__inputs_input" placeholder="Добавить фото"
+                            type="file">
+                    </div>
+                    <div class="auth__inputs_input"><input class="auth__inputs_input" placeholder="Контент" type="text">
+                    </div>
+                    <button class="article-button text-black">Добавить</button>
+                </form>
             </div>
         </div>
 

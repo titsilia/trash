@@ -36,18 +36,20 @@
                 <p class="applications__text text-black name">4000 р.</p>
             </div>
             <div class="applications__item">
-                <div>
-                    <input type="checkbox" id="scales" name="scales" />
-                    <label for="scales">Принято</label>
-                </div>
-                <div>
-                    <input type="checkbox" id="horns" name="horns" />
-                    <label for="horns">Отклонено</label>
-                </div>
-                <div>
-                    <input type="checkbox" id="horns" name="horns" />
-                    <label for="horns">Выполнено</label>
-                </div>
+                <form action="">
+                    <div>
+                        <input type="checkbox" id="scales" name="scales" />
+                        <label for="scales">Принято</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="horns" name="horns" />
+                        <label for="horns">Отклонено</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="horns" name="horns" />
+                        <label for="horns">Выполнено</label>
+                    </div>
+                </form>
             </div>
         </div>
         <div class="applications__box">
@@ -79,18 +81,20 @@
                 <p class="applications__text text-black name">4000 р.</p>
             </div>
             <div class="applications__item">
-                <div>
-                    <input type="checkbox" id="scales" name="scales" />
-                    <label for="scales">Принято</label>
-                </div>
-                <div>
-                    <input type="checkbox" id="horns" name="horns" />
-                    <label for="horns">Отклонено</label>
-                </div>
-                <div>
-                    <input type="checkbox" id="horns" name="horns" />
-                    <label for="horns">Выполнено</label>
-                </div>
+                <form action="">
+                    <div>
+                        <input type="checkbox" id="scales" name="scales" />
+                        <label for="scales">Принято</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="horns" name="horns" />
+                        <label for="horns">Отклонено</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="horns" name="horns" />
+                        <label for="horns">Выполнено</label>
+                    </div>
+            </form>
             </div>
         </div>
         <div class="applications__box">
@@ -122,18 +126,20 @@
                 <p class="applications__text text-black name">4000 р.</p>
             </div>
             <div class="applications__item">
-                <div>
-                    <input type="checkbox" id="scales" name="scales" />
-                    <label for="scales">Принято</label>
-                </div>
-                <div>
-                    <input type="checkbox" id="horns" name="horns" />
-                    <label for="horns">Отклонено</label>
-                </div>
-                <div>
-                    <input type="checkbox" id="horns" name="horns" />
-                    <label for="horns">Выполнено</label>
-                </div>
+                <form action="">
+                    <div>
+                        <input type="checkbox" id="scales" name="scales" />
+                        <label for="scales">Принято</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="horns" name="horns" />
+                        <label for="horns">Отклонено</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="horns" name="horns" />
+                        <label for="horns">Выполнено</label>
+                    </div>
+                </form>
             </div>
         </div>
         <div class="articles__numbers">
