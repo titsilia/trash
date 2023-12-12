@@ -38,12 +38,12 @@
                                     <div class="order__type_title">Тип мусора:</div>
                                     <div class="order__title_checkbox text-white">
                                         <div class="glass-carton">
-                                                    <div><input type="checkbox" id="glass" name="glass" /><label for="scales">Стекло</label></div>
-                                                    <div><input type="checkbox" id="carton" name="carton" /><label for="horns">Картон</label></div>
+                                                    <div><input  type="checkbox" id="glass" name="glass"/><label class="order-checbox" for="scales">Стекло</label></div>
+                                                    <div><input type="checkbox" id="carton" name="carton"/><label class="order-checbox" for="horns">Картон</label></div>
                                                 </div>
                                                 <div class="plastic-organika">
-                                                    <div><input type="checkbox" id="plastic" name="plastic" /><label for="scales">Пластик</label></div>
-                                                    <div><input type="checkbox" id="organika" name="organika" /><label for="horns">Органика</label></div>
+                                                    <div><input type="checkbox" id="plastic" name="plastic" /><label class="order-checbox" for="scales">Пластик</label></div>
+                                                    <div><input type="checkbox" id="organika" name="organika" /><label class="order-checbox" for="horns">Органика</label></div>
                                         </div>
                                     </div>
                                 </div>
@@ -61,7 +61,6 @@
                                             <option value="value3">22:00</option>
                                           </select>
                                     </div>
-                                    <div class="time__buttons-two"></div>
                                 </div>
 
 
