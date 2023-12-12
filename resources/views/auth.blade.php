@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
-<x-head/>
+<x-index-head/>
 
 <body>
     <x-header/>

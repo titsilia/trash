@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<x-head/>
+<x-index-head/>
 
 <body>
     <x-header />
@@ -13,8 +13,9 @@
                 <form action="">
                     <div class="auth__inputs_inputs"><input class="auth__inputs_input" placeholder="Название" name="title" type="text">
                     </div>
-                    <div class="auth__inputs_inputs"><input class="auth__inputs_input" name="photo" placeholder="Добавить фото"
-                            type="file">
+                    <div class="auth__inputs_inputs">
+                            <label for="image" class="auth__inputs_input">Изображение статьи</label>
+                            <input class="auth__inputs_input" type="file" id="photo" name="photo">
                     </div>
                     <div class="auth__inputs_inputs"><input class="auth__inputs_input" placeholder="Контент" name="content" type="text">
                     </div>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<x-head/>
+<x-index-head/>
 
 <body>
     <x-header />
@@ -38,21 +38,28 @@
             <div class="applications__item">
                 <form action="">
                     <div>
-                        <input type="checkbox" id="scales" name="aply" />
-                        <label for="scales">Принято</label>
+                        <a href="">
+                            {{-- <div class="">Принято</div> --}}
+                            <img src="">
+                        </a>
                     </div>
                     <div>
-                        <input type="checkbox" id="horns" name="cancel" />
-                        <label for="horns">Отклонено</label>
+                        <a href="">
+                            {{-- <div class="">Отклонено</div> --}}
+                            <img src="">
+                        </a>
                     </div>
                     <div>
-                        <input type="checkbox" id="horns" name="done" />
-                        <label for="horns">Выполнено</label>
+                        <a href="">
+                            {{-- <div class="">Выполнено</div> --}}
+                            <img src="">
+                        </a>
+
                     </div>
                 </form>
             </div>
         </div>
-        <div class="applications__box">
+        {{-- <div class="applications__box">
             <div class="applications__item">
                 <p class="applications__text text-gray">ФИО:</p>
                 <p class="applications__text text-black name">Ноунеймов Ноунейм Ноунеймович</p>
@@ -83,21 +90,21 @@
             <div class="applications__item">
                 <form action="">
                     <div>
-                        <input type="checkbox" id="scales" name="aply" />
-                        <label for="scales">Принято</label>
+                        <input type="button" id="scales" name="aply" value="Принято"/>
+                        <label for="scales"></label>
                     </div>
                     <div>
-                        <input type="checkbox" id="horns" name="cancel" />
-                        <label for="horns">Отклонено</label>
+                        <input type="button" id="horns" name="cancel" value="Отклонено"/>
+                        <label for="horns"></label>
                     </div>
                     <div>
-                        <input type="checkbox" id="horns" name="done" />
-                        <label for="horns">Выполнено</label>
+                        <input type="button" id="horns" name="done" value="Выполнено"/>
+
                     </div>
             </form>
             </div>
-        </div>
-        <div class="applications__box">
+        </div> --}}
+        {{-- <div class="applications__box">
             <div class="applications__item">
                 <p class="applications__text text-gray">ФИО:</p>
                 <p class="applications__text text-black name">Ноунеймов Ноунейм Ноунеймович</p>
@@ -118,8 +125,8 @@
                     </div>
 
                 </div>
-            </div>
-            <div class="applications__item">
+            </div> --}}
+            {{-- <div class="applications__item">
                 <p class="applications__text text-gray">Адрес:</p>
                 <p class="applications__text text-black name">Ул. Архитектора Калимуллина, д 4, п 1, кв 76</p>
                 <p class="applications__text text-gray">Цена:</p>
@@ -128,20 +135,20 @@
             <div class="applications__item">
                 <form action="">
                     <div>
-                        <input type="checkbox" id="scales" name="aply" />
-                        <label for="scales">Принято</label>
+                        <input type="button" id="scales" name="aply" value="Принято"/>
+                        <label for="scales"></label>
                     </div>
                     <div>
-                        <input type="checkbox" id="horns" name="cancel" />
-                        <label for="horns">Отклонено</label>
+                        <input type="button" id="horns" name="cancel" value="Отклонено"/>
+                        <label for="horns"></label>
                     </div>
                     <div>
-                        <input type="checkbox" id="horns" name="done" />
-                        <label for="horns">Выполнено</label>
-                    </div>
-                </form>
-            </div>
-        </div>
+                        <input type="button" id="horns" name="done" value="Выполнено"/>
+                        {{-- <label for="horns"></label> --}}
+                    {{-- </div> --}}
+                {{-- </form> --}}
+            {{-- </div> --}}
+        {{-- </div> --}}
         <div class="articles__numbers">
             <p>1</p>
             <p>2</p>

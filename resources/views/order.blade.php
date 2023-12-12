@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
-<x-head/>
+<x-index-head/>
 
 <body>
     <x-header />
@@ -38,7 +38,6 @@
                                     <div class="order__type_title">Тип мусора:</div>
                                     <div class="order__title_checkbox text-white">
                                         <div class="glass-carton">
-                                            <form method="POST" action="">
                                                     <div><input type="checkbox" id="glass" name="glass" /><label for="scales">Стекло</label></div>
                                                     <div><input type="checkbox" id="carton" name="carton" /><label for="horns">Картон</label></div>
                                                 </div>
@@ -75,7 +74,7 @@
                                         <p class="text-white subtitle">4000 р.</p>
                                         <button class="order__button subtitle" type="submit">Перейти к оплате</button>
                                     </div>
-                            </form>
+                        </form>
                 </div>
             </div>
             <div class="order__item_right-box">
