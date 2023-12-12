@@ -30,12 +30,12 @@
                                 <div class="order__type_title">Тип мусора:</div>
                                 <div class="order__title_checkbox text-white">
                                     <div class="glass-carton">
-                                                <div><input  type="checkbox" id="glass" name="glass"/><label class="order-checbox" for="glass">Стекло</label></div>
-                                                <div><input type="checkbox" id="carton" name="carton"/><label class="order-checbox" for="carton">Картон</label></div>
-                                            </div>
-                                            <div class="plastic-organika">
-                                                <div><input type="checkbox" id="plastic" name="plastic" /><label class="order-checbox" for="plastic">Пластик</label></div>
-                                                <div><input type="checkbox" id="organika" name="organika" /><label class="order-checbox" for="organika">Органика</label></div>
+                                        <select name="select">
+                                            <option value="plastic">Пластик</option>
+                                            <option value="carton">Картон</option>
+                                            <option value="glass">Стекло</option>
+                                            <option value="organic">Органика</option>
+                                          </select>
                                     </div>
                                 </div>
                             </div>

@@ -36,27 +36,29 @@
                 <p class="applications__text text-black name">4000 р.</p>
             </div>
             <div class="applications__item">
-                <form action="">
-                    <div>
-                        <a class="btn-block article-button text-black"  href="">
-                            Принято
-                            <img src="">
-                        </a>
-                    </div>
-                    <div>
-                        <a class="btn-block article-button text-black"  href="">
-                            Отклонено
-                            <img src="">
-                        </a>
-                    </div>
-                    <div>
-                        <a class="btn-block article-button text-black"  href="">
-                            Выполнено
-                            <img src="">
-                        </a>
+                <div class="app__btns">
+                    <form action="">
+                        <div>
+                            <a class="btn-block article-button text-black"  href="">
+                                Принято
+                                <img src="">
+                            </a>
+                        </div>
+                        <div>
+                            <a class="btn-block article-button text-black"  href="">
+                                Отклонено
+                                <img src="">
+                            </a>
+                        </div>
+                        <div>
+                            <a class="btn-block article-button text-black"  href="">
+                                Выполнено
+                                <img src="">
+                            </a>
 
-                    </div>
-                </form>
+                        </div>
+                    </form>
+            </div>
             </div>
         </div>
         <div class="articles__numbers">
