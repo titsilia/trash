@@ -66,7 +66,7 @@
                             @enderror
                         </div>
                     </div>
-                    <button type="submit" class="reg__buttons">Зайти</button>
+                    <button class="reg__buttons">Зарегистрироваться</button>
             </form>
             </div>
         </div>

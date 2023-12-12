@@ -729,8 +729,7 @@ main {
 .lk-box {
     margin-top: 32px;
     display: flex;
-    gap: 34px;
-    margin-bottom: 60px;
+    justify-content: center;
 
 }
 
@@ -764,6 +763,8 @@ main {
     gap: 18px;
 }
 
+
+
 /* Order */
 
 .order__container {
@@ -772,10 +773,11 @@ main {
 }
 
 .order-item {
+    display: flex;
+    flex-direction: column;
     border: 1px solid #C11E41;
     background: #C11E41;
     border-radius: 17px;
-    width: 730px;
     padding: 20px;
 }
 
@@ -791,6 +793,8 @@ main {
 .order__info {
     display: flex;
     gap: 23px;
+    padding: 0 100px 0 100px;
+    justify-content: space-between;
 }
 
 .order__inputs_aside {
@@ -868,9 +872,11 @@ main {
 }
 
 .button__price {
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
-    gap: 26px;
+
+
 }
 
 .order__inputs_aside {
@@ -944,7 +950,7 @@ textarea {
     background: none;
     resize: none;
     border-radius: 17px;
-    border: 1px solid #000;
+    border: 1px solid #ffffff;
     padding: 8px;
     color: #FFF;
     font-family: PTRoot;
@@ -956,6 +962,8 @@ textarea {
 
 .tacontent {
     resize: none;
+    margin-top: 30px;
+    outline: none;
 }
 .textarea::placeholder {
     color: #FFF;
@@ -980,6 +988,7 @@ textarea {
 
 .order__container {
     display: flex;
+    flex-direction: column;
 }
 
 .order__item_right-blue {
@@ -993,4 +1002,26 @@ textarea {
 
 .order-checbox {
     margin-left: 10px;
+}
+
+select {
+    font-family: TTNorms;
+    font-size: 24px;
+    font-style: normal;
+    outline: none;
+    padding: 3px;
+    border-radius: 10px;
+    background: #C11E41;
+    border: 1px solid #FFF;
+    color: #FFF;
+    width: 250px;
+}
+
+.order__info_right {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-block {
+    display: block;
 }

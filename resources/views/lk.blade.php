@@ -25,53 +25,21 @@
                     <p class="applications__text text-gray type">Редактировать:</p>
                 </div>
                     <form method="POST" action="" class="auth__inputs_lk">
-                                <div class="auth__inputs_inputs"><input class="auth__inputs_input" placeholder="Фамилия" name="surname" type="text"></div>
-                                <div class="auth__inputs_inputs"><input class="auth__inputs_input" placeholder="Имя" name="name" type="text"></div>
-                                <div class="auth__inputs_inputs"><input class="auth__inputs_input" placeholder="Отчество" name="patronymic" type="text"></div>
-                                <div class="auth__inputs_inputs"><input class="auth__inputs_input" placeholder="+(700)202-22-92" name="phone" type="tel"></div>
-                                <div class="auth__inputs_inputs"><input class="auth__inputs_input" placeholder="nazgulenok78@gmail.com" name="email" type="email"></div>
-                                <button class="article-button text-black" type="submit">Сохранить изменения</button>
+                                <div class="auth__inputs_inputs"><input class="auth__inputs_input" placeholder="Фамилия" value="" name="surname" type="text"></div>
+                                <div class="auth__inputs_inputs"><input class="auth__inputs_input" placeholder="Имя" value="" name="name" type="text"></div>
+                                <div class="auth__inputs_inputs"><input class="auth__inputs_input" placeholder="Отчество" value="" name="patronymic" type="text"></div>
+                                <div class="auth__inputs_inputs"><input class="auth__inputs_input" placeholder="+(700)202-22-92" value="" name="phone" type="tel"></div>
+                                <div class="auth__inputs_inputs"><input class="auth__inputs_input" placeholder="nazgulenok78@gmail.com" value="" name="email" type="email"></div>
+                                <div class="article-text-sub">
+                                    <p class="applications__text text-gray type">Изменить пароль:</p>
+                                    <input class="auth__inputs_input" placeholder="Введите пароль" type="password" name="repeat_password">
+                                </div>
+
+                                <button class="article-button text-black">Сохранить изменения</button>
 
                         </div>
 
-                        <div class="lk-box-side">
-                            <div class="article-box">
-                                {{-- <div class="article-border">
-                                    <div class="article-text-sub">
-                                        <p class="applications__text text-gray type">Адрес</p>
-                                        <p class="applications__text text-black">Ул. Архитектора Калимуллина, д 4, п 1, кв 76</p>
-                                    </div>
-                                    <div class="article-text-sub">
-                                        <p class="applications__text text-gray type">Редактировать:</p>
-                                    </div>
-                                    <form method="POST" action="">
-                                    <div class="auth__inputs_input"><input class="auth__inputs_input" placeholder="Улица" name="street" type="text"></div>
-                                    <div class="article-inputs-short">
-                                        <div class="auth__inputs_input short"><input class="auth__inputs_input short"placeholder="Дом" name="home" type="text"></div>
-                                        <div class="auth__inputs_input short"><input class="auth__inputs_input short"placeholder="Подъезд" name="entrance" type="text"></div>
-                                        <div class="auth__inputs_input short"><input class="auth__inputs_input short"placeholder="Этаж" name="floor" type="text"></div>
-                                        <div class="auth__inputs_input short"><input class="auth__inputs_input short"placeholder="Кв" name="apartment" type="text"></div>
-                                    </div>
-                                    <button class="article-button text-black" type="submit">Сохранить изменения</button>
-
-                                </div> --}}
-
-                                <div class="lk-box">
-                                    <div class="article-border">
-                                        <div class="article-text-sub">
-                                            <p class="applications__text text-gray type">Пароль</p>
-                                            <input class="auth__inputs_input" placeholder="Пароль" type="password" name="password">
-                                            </p>
-                                        </div>
-                                        <div class="article-text-sub">
-                                            <p class="applications__text text-gray type">Изменить пароль:</p>
-                                            <input class="auth__inputs_input" placeholder="Повторите пароль" type="password" name="repeat_password">
-                                        </div>
-
-                                        <div class="article-inputs-short">
-
-                                        </div>
-                                        <button class="article-button text-black" type="submit">Сохранить изменения</button>
+                
                             </form>
                         </div>
                     </div>

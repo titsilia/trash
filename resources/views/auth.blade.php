@@ -33,7 +33,7 @@
                         @enderror
                     </div>
                 </div>
-                <button type="submit" class="auth__buttons">Зайти</button>
+                <button class="auth__buttons">Зайти</button>
             </form>
         </div>
     </main>

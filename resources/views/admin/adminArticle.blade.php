@@ -50,8 +50,8 @@
                         <div class="auth__inputs_inputs"><input class="auth__inputs_input" value="" name="content" placeholder="Контент"
                                 type="text">
                         </div>
-                        <button class="article-button text-black" type="submit">Сохранить изменения</button>
-                        <button class="article-button text-black" type="submit">Удалить</button>
+                        <button class="article-button text-black">Сохранить изменения</button>
+                        <a class="btn-block article-button text-black" href="">Удалить</a>
                     </form>
                 </div>
 
