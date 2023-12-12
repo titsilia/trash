@@ -969,7 +969,7 @@ textarea {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 286px;
+
     border-radius: 17px;
     padding: 16px;
 }
@@ -980,10 +980,9 @@ textarea {
 
 .order__item_right-blue {
     border-radius: 17px;
-    height: 550px;
     display: flex;
     flex-direction: column;
-    gap: 26px;
+    gap: 10px;
     padding: 16px;
     font-family: TTNorms;
 }
