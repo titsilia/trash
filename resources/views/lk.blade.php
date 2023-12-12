@@ -24,12 +24,12 @@
                 <div class="article-text-sub">
                     <p class="applications__text text-gray type">Редактировать:</p>
                 </div>
-                    <form method="POST" action="">
-                                <div class="auth__inputs_input"><input class="auth__inputs_input" placeholder="Фамилия" name="surname" type="text"></div>
-                                <div class="auth__inputs_input"><input class="auth__inputs_input" placeholder="Имя" name="name" type="text"></div>
-                                <div class="auth__inputs_input"><input class="auth__inputs_input" placeholder="Отчество" name="patronymic" type="text"></div>
-                                <div class="auth__inputs_input"><input class="auth__inputs_input" placeholder="+(700)202-22-92" name="phone" type="tel"></div>
-                                <div class="auth__inputs_input"><input class="auth__inputs_input" placeholder="nazgulenok78@gmail.com" name="email" type="email"></div>
+                    <form method="POST" action="" class="auth__inputs_lk">
+                                <div class="auth__inputs_inputs"><input class="auth__inputs_input" placeholder="Фамилия" name="surname" type="text"></div>
+                                <div class="auth__inputs_inputs"><input class="auth__inputs_input" placeholder="Имя" name="name" type="text"></div>
+                                <div class="auth__inputs_inputs"><input class="auth__inputs_input" placeholder="Отчество" name="patronymic" type="text"></div>
+                                <div class="auth__inputs_inputs"><input class="auth__inputs_input" placeholder="+(700)202-22-92" name="phone" type="tel"></div>
+                                <div class="auth__inputs_inputs"><input class="auth__inputs_input" placeholder="nazgulenok78@gmail.com" name="email" type="email"></div>
                                 <button class="article-button text-black" type="submit">Сохранить изменения</button>
 
                         </div>

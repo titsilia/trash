@@ -16,7 +16,7 @@
             <form method="POST" action="/auth_user" class="auth__form">
                 @csrf
                 <div class="auth__inputs_border">
-                    <div class="auth__inputs_input">
+                    <div class="auth__inputs_inputs">
                         <input class="auth__inputs_input" placeholder="nazgulenok78@gmail.com" type="email" name="email">
                         @error("email")
                             <div class="alert alert-danger" role="alert">
@@ -24,7 +24,7 @@
                             </div>
                         @enderror
                     </div>
-                    <div class="auth__inputs_input">
+                    <div class="auth__inputs_inputs">
                         <input class="auth__inputs_input" placeholder="Пароль" type="password" name="password">
                         @error("password")
                             <div class="alert alert-danger" role="alert">

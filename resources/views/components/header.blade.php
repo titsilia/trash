@@ -13,6 +13,9 @@
                     <div class="header__nav_link"><a href="/register">Регистрация</a></div>
                 @endguest
                 @auth
+                    <div class="header__nav_link"><a href="../admin/applications">Заявки</a></div>
+                    <div class="header__nav_link"><a href="../admin/adminArticle">Статьи</a></div>
+                    <div class="header__nav_link"><a href="../admin/applications">Админ</a></div>
                     <div class="header__nav_link"><a href="/lk">Личный кабинет</a></div>
                     <div class="header__nav_link"><a href="/exit">Выход</a></div>
                 @endauth

@@ -11,12 +11,12 @@
             <div class="article-text">Добавить статью:</div>
             <div class="article-border">
                 <form action="">
-                    <div class="auth__inputs_input"><input class="auth__inputs_input" placeholder="Название" name="title" type="text">
+                    <div class="auth__inputs_inputs"><input class="auth__inputs_input" placeholder="Название" name="title" type="text">
                     </div>
-                    <div class="auth__inputs_input"><input class="auth__inputs_input" name="photo" placeholder="Добавить фото"
+                    <div class="auth__inputs_inputs"><input class="auth__inputs_input" name="photo" placeholder="Добавить фото"
                             type="file">
                     </div>
-                    <div class="auth__inputs_input"><input class="auth__inputs_input" placeholder="Контент" name="content" type="text">
+                    <div class="auth__inputs_inputs"><input class="auth__inputs_input" placeholder="Контент" name="content" type="text">
                     </div>
                     <button class="article-button text-black">Добавить</button>
                 </form>
@@ -41,13 +41,13 @@
                         <p class="applications__text text-gray type">Редактировать:</p>
                     </div>
                     <form action="">
-                        <div class="auth__inputs_input"><input class="auth__inputs_input" name="title" placeholder="Название"
+                        <div class="auth__inputs_inputs"><input class="auth__inputs_input" name="title" placeholder="Название"
                                 type="text">
                         </div>
-                        <div class="auth__inputs_input"><input class="auth__inputs_input" name="photo" placeholder=""
+                        <div class="auth__inputs_inputs"><input class="auth__inputs_input" name="photo" placeholder=""
                                 type="file">
                         </div>
-                        <div class="auth__inputs_input"><input class="auth__inputs_input" name="content" placeholder="Контент"
+                        <div class="auth__inputs_inputs"><input class="auth__inputs_input" name="content" placeholder="Контент"
                                 type="text">
                         </div>
                         <button class="article-button text-black" type="submit">Сохранить изменения</button>
@@ -68,13 +68,13 @@
                         <p class="applications__text text-gray type">Редактировать:</p>
                     </div>
                     <form action="">
-                        <div class="auth__inputs_input"><input class="auth__inputs_input" placeholder="Название"
+                        <div class="auth__inputs_inputs"><input class="auth__inputs_input" placeholder="Название"
                                 type="text" name="title">
                         </div>
-                        <div class="auth__inputs_input"><input class="auth__inputs_input" placeholder=""
+                        <div class="auth__inputs_inputs"><input class="auth__inputs_input" placeholder=""
                                 type="file" name="photo">
                         </div>
-                        <div class="auth__inputs_input"><input class="auth__inputs_input" placeholder="Контент"
+                        <div class="auth__inputs_inputs"><input class="auth__inputs_input" placeholder="Контент"
                                 type="text" name="content">
                         </div>
                         <button class="article-button text-black" type="submit">Сохранить изменения</button>

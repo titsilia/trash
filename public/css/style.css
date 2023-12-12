@@ -400,13 +400,15 @@ main {
 
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
 }
 
 .auth__form_container{
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .auth__inputs {
@@ -426,10 +428,17 @@ main {
     align-items: center;
     justify-content: center;
     border: 1px solid #67BF67;
-    height: 104px;
+    padding: 18px;
     width: 405px;
     border-radius: 17px;
     gap: 12px;
+}
+
+.auth__inputs_inputs {
+    font-family: PTRoot;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
 }
 
 .auth__inputs_input {
@@ -460,6 +469,7 @@ main {
     color: #fff;
     display: flex;
     padding: 8px 99px 0px 32px;
+    margin-bottom: 60px;
 }
 
 .auth__buttons:hover {
@@ -489,7 +499,7 @@ main {
     justify-content: center;
     border: 1px solid #67BF67;
     width: 405px;
-    height: 319px;
+    padding: 18px;
     border-radius: 17px;
     gap: 12px;
 }
@@ -742,6 +752,12 @@ main {
 
 }
 
+.auth__inputs_lk {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
 /* Order */
 
 .order__container {
@@ -757,6 +773,15 @@ main {
     padding: 20px;
 }
 
+.order__info_main {
+    /* padding: 18px; */
+    color: #FFF;
+}
+
+.order__info_side {
+    /* padding: 18px; */
+}
+
 .order__info {
     display: flex;
     gap: 23px;
@@ -764,6 +789,7 @@ main {
 
 .order__inputs_aside {
     display: flex;
+    color: #FFF;
 
 
 }
@@ -780,6 +806,13 @@ main {
     color: #FFF;
  }
 
+.order__inputs_inputs {
+    font-family: PTRoot;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+}
+
 .order__inputs_input {
     width: 332px;
     border: none;
@@ -790,6 +823,7 @@ main {
     font-weight: 300;
     background: #C11E41;
     margin-top: 10px;
+    color: #FFF;
 }
 
 .order__inputs_input:focus {
@@ -838,6 +872,13 @@ main {
     gap: 20px;
 }
 
+.order__inputs_sides{
+    font-family: PTRoot;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+}
+
 .order__inputs_side {
     width: 80px;
     border: none;
@@ -876,7 +917,7 @@ main {
 
 .order-time-type {
     display: flex;
-    gap: 125px;
+    gap: 142px;
 }
 
 .time__button {
