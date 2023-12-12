@@ -4,7 +4,7 @@
 <x-head/>
 
 <body>
-    <x-header-auth />
+    <x-header />
     <main class="center">
         <div class="order__container">
             <div class="order-item order-red bg-red">

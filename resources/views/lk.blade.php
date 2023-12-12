@@ -4,7 +4,7 @@
 <x-head/>
 
 <body>
-    <x-header-auth />
+    <x-header />
     <main class="center">
         <div class="article__title text-blue">Личный кабинет</div>
         <div class="lk-box">

@@ -4,7 +4,7 @@
 <x-head/>
 
 <body>
-    <x-header-auth />
+    <x-header />
     <main class="center">
         <div class="article__title">15 фактов про мусор</div>
         <a href="/articles" class="article__link"> < назад </a>

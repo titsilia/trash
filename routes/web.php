@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\ArticlesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,13 +29,10 @@ Route::post('/register_user', [AuthController::class, 'register_user']);
 
 Route::get('/exit', [AuthController::class, 'exit']);
 
+Route::get('/articles', [ArticlesController::class, 'articles']);
 
 Route::get('/article', function () {
     return view('article');
-});
-
-Route::get('/articles', function () {
-    return view('articles');
 });
 
 Route::get('/lk', function () {

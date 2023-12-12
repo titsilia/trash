@@ -4,7 +4,7 @@
 <x-head/>
 
 <body>
-    <x-header-admin />
+    <x-header />
     <main class="center">
         <div class="article__title text-blue">Статьи</div>
         <div class="article-box">
