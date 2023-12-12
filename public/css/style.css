@@ -843,7 +843,7 @@ main {
 
 .comment-price {
     display: flex;
-    gap: 31px;
+    gap: 46px;
     align-items: center;
 }
 
@@ -952,6 +952,10 @@ textarea {
     font-style: normal;
     font-weight: 300;
 
+}
+
+.tacontent {
+    resize: none;
 }
 .textarea::placeholder {
     color: #FFF;

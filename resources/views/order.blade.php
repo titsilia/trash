@@ -50,24 +50,25 @@
                                 <div class="order__time">
                                     <div class="order__type_title">Время доставки:</div>
                                     <div class="time__buttons-one">
-                                        <input type="button" name="t_button" class="time__button" value="8:00">
-                                        <input type="button" name="t_button" class="time__button" value="10:00">
-                                        <input type="button" name="t_button" class="time__button" value="12:00">
-                                        <input type="button" name="t_button" class="time__button" value="14:00">
+                                        <select name="select">
+                                            <option value="value1" selected>8:00</option>
+                                            <option value="value2" >10:00</option>
+                                            <option value="value3">12:00</option>
+                                            <option value="value3">14:00</option>
+                                            <option value="value3">16:00</option>
+                                            <option value="value3">18:00</option>
+                                            <option value="value3">20:00</option>
+                                            <option value="value3">22:00</option>
+                                          </select>
                                     </div>
-                                    <div class="time__buttons-two">
-                                        <input type="button" name="t_button" class="time__button" value="16:00">
-                                        <input type="button" name="t_button" class="time__button" value="18:00">
-                                        <input type="button" name="t_button" class="time__button" value="20:00">
-                                        <input type="button" name="t_button" class="time__button" value="22:00">
-                                    </div>
+                                    <div class="time__buttons-two"></div>
                                 </div>
 
 
                                 </div>
                                 <div class="comment-price">
                                     <div class="input__comment">
-                                        <textarea class="tacontent" name="comment" id="" cols="30" rows="10" placeholder="Оставьте комментарий"></textarea>
+                                        <textarea class="tacontent" name="comment" id="" cols="40" rows="10" placeholder="Оставьте комментарий"></textarea>
                                     </div>
                                     <div class="button__price">
                                         <p class="text-white subtitle-low">Цена</p>
