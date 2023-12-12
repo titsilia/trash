@@ -579,7 +579,7 @@ main {
 /* Articles */
 
 .articles__content_container {
-    margin-top: 52px;
+
     display: flex;
     justify-content: space-between;
     gap: 32px;
