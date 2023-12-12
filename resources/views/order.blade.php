@@ -12,23 +12,23 @@
                 <div class="order__info">
                     <div class="order__info_main text-white">
                         <form method="POST" action="">
-                                        <div class="order__inputs_inputs"><input class="order__inputs_input order-ph"placeholder="Фамилия" name="surname" type="text"></div>
-                                        <div class="order__inputs_inputs"><input class="order__inputs_input order-ph" placeholder="Имя" name="name" type="text"></div>
-                                        <div class="order__inputs_inputs"><input class="order__inputs_input order-ph"placeholder="Отчество" name="patronymic" type="text"></div>
-                                        <div class="order__inputs_inputs order-bt"><input class="order__inputs_input order-ph"placeholder="+(700)202-22-92" name="phone" type=""></div>
-                                        <div class="order__inputs_inputs"><input class="order__inputs_input order-ph"placeholder="nazgulenok78@gmail.com" name="email" type="email"></div>
-                                        </div>
-                                        <div class="order__info_side">
-                                            <div class="order__inputs_inputs"><input class="order__inputs_input order-ph"placeholder="Улица" name="street" type="text">
-                                            </div>
-                                            <div class="order__inputs_aside">
-                                                <div class="order__inputs_sides"><input class="order__inputs_side order-ph"placeholder="Дом" name="home" type="text"></div>
-                                                <div class="order__inputs_sides"><input class="order__inputs_side order-ph"placeholder="Подъезд" name="entrance" type="text"></div>
-                                         </div>
-                                         <div class="order__inputs_aside">
-                                            <div class="order__inputs_sides"><input class="order__inputs_side order-ph"placeholder="Этаж" name="floor" type="text"></div>
-                                                <div class="order__inputs_sides"><input class="order__inputs_side order-ph" placeholder="Кв" name="apartment" type="text"></div>
-                                         </div>
+                            <div class="order__inputs_inputs"><input class="order__inputs_input order-ph"placeholder="Фамилия" name="surname" type="text"></div>
+                            <div class="order__inputs_inputs"><input class="order__inputs_input order-ph" placeholder="Имя" name="name" type="text"></div>
+                            <div class="order__inputs_inputs"><input class="order__inputs_input order-ph"placeholder="Отчество" name="patronymic" type="text"></div>
+                            <div class="order__inputs_inputs order-bt"><input class="order__inputs_input order-ph"placeholder="+(700)202-22-92" name="phone" type=""></div>
+                            <div class="order__inputs_inputs"><input class="order__inputs_input order-ph"placeholder="nazgulenok78@gmail.com" name="email" type="email"></div>
+                            </div>
+                            <div class="order__info_side">
+                                <div class="order__inputs_inputs"><input class="order__inputs_input order-ph"placeholder="Улица" name="street" type="text">
+                                </div>
+                                <div class="order__inputs_aside">
+                                    <div class="order__inputs_sides"><input class="order__inputs_side order-ph"placeholder="Дом" name="home" type="text"></div>
+                                    <div class="order__inputs_sides"><input class="order__inputs_side order-ph"placeholder="Подъезд" name="entrance" type="text"></div>
+                                </div>
+                                <div class="order__inputs_aside">
+                                <div class="order__inputs_sides"><input class="order__inputs_side order-ph"placeholder="Этаж" name="floor" type="text"></div>
+                                    <div class="order__inputs_sides"><input class="order__inputs_side order-ph" placeholder="Кв" name="apartment" type="text"></div>
+                                </div>
 
                                 </div>
                             </div>
