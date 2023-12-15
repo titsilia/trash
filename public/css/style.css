@@ -644,9 +644,12 @@ main {
     gap: 37px;
 }
 
-.applications__item {
 
 
+.app__btns {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 /* Admin Articles */
@@ -716,9 +719,7 @@ main {
 
 }
 
-.order-box {
 
-}
 
 .lk-box {
     margin-top: 32px;
@@ -755,6 +756,16 @@ main {
     display: flex;
     flex-direction: column;
     gap: 18px;
+}
+
+.lk-border {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    padding: 18px 95px 18px 18px;
+    border: 1px solid #2E2626;
+    border-radius: 17px;
+    width: 100%;
 }
 
 

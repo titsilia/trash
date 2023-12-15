@@ -8,7 +8,7 @@
     <main class="center">
         <div class="article__title text-blue">Личный кабинет</div>
         <div class="lk-box">
-            <div class="article-border">
+            <div class="lk-border">
                 <div class="article-text-sub">
                     <p class="applications__text text-gray type">ФИО: </p>
                     <p class="applications__text text-black">Ноунеймов Ноунейм Ноунеймович</p>
@@ -39,7 +39,7 @@
 
                         </div>
 
-                
+
                             </form>
                         </div>
                     </div>
