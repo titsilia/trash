@@ -13,13 +13,10 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('articles', function (Blueprint $table) {
+        Schema::create('trash_type', function (Blueprint $table) {
             $table->id();
-            $table->string('articles_title');
-            $table->longText('articles_text');
-            $table->timestamps();
+            $table->string('type_text');
         });
-
     }
 
     /**
@@ -29,6 +26,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('articles');
+        Schema::dropIfExists('trash_type');
     }
 };

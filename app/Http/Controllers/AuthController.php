@@ -30,8 +30,7 @@ class AuthController extends Controller
         if (Auth::attempt([
            "email" => $user["email"],
            "password" => $user["password"]
-       ]))
-       {    
+       ])) {    
         return redirect("/")->with("success","");
        }
        return redirect()->back()->with("error","Неверный логин или пароль");
