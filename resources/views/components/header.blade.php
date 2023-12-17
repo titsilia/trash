@@ -16,8 +16,8 @@
                 @endguest
                 @auth
                     <?php if(auth()->user()->role_id === 1) { ?>
-                        <div class="header__nav_link"><a href="../admin/applications">Заявки</a></div>
-                        <div class="header__nav_link"><a href="../admin/adminArticle">Статьи</a></div>
+                        <div class="header__nav_link"><a href="../admin_applications">Заявки</a></div>
+                        <div class="header__nav_link"><a href="../admin_articles">Статьи</a></div>
                         <div class="header__nav_link"><a href="/lk">Личный кабинет</a></div>
                         <div class="header__nav_link"><a href="/exit">Выход</a></div>
                     <?php } else { ?>

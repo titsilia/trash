@@ -14,4 +14,14 @@ class ArticlesController extends Controller
             "articles"=>$articles
         ]);
     }
+
+    public function article($id)
+    {
+        $article = Article::find($id);
+        return view("article",[
+            "article"=>$article
+        ]);
+    }
+
+
 }

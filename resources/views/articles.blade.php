@@ -11,14 +11,14 @@
         <div class="articles__content">
             <div class="articles__content_container">
                 @foreach ($articles as $item)
-                    <a href="/article">
+                    <a href="/articles/{{$item->id}}">
                         <div class="articles__content_container">
                             <div class="articles__content_box">
                                 <div class="articles__content_heading">{{ $item->articles_title }}</div>
                                 <div class="articles__content_text">{{ $text = substr($item->articles_text, 0, 250) }}
                                 </div>
                                 <div class="articles__content_img"><img class="articles__image"
-                                        src="../images/articles-1.jpg" alt=""></div>
+                                        src="{{ asset('images/articles/' . $item->articles_photo) }}" alt=""></div>
                             </div>
                         </div>
                     </a>

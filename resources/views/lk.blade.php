@@ -11,35 +11,34 @@
             <div class="lk-border">
                 <div class="article-text-sub">
                     <p class="applications__text text-gray type">ФИО: </p>
-                    <p class="applications__text text-black">Ноунеймов Ноунейм Ноунеймович</p>
+                    <p class="applications__text text-black">{{Auth::user()->name}} {{Auth::user()->surname}} {{Auth::user()->patronymic}}</p>
                 </div>
                 <div class="article-text-sub">
                     <p class="applications__text text-gray type">Номер телефона:</p>
-                    <p class="applications__text text-black">+(789)233-23-33</p>
+                    <p class="applications__text text-black">{{Auth::user()->telephone}}</p>
                 </div>
                 <div class="article-text-sub">
                     <p class="applications__text text-gray type">Почта:</p>
-                    <p class="applications__text text-black">noname@gmail.com</p>
+                    <p class="applications__text text-black">{{Auth::user()->email}}</p>
                 </div>
                 <div class="article-text-sub">
                     <p class="applications__text text-gray type">Редактировать:</p>
                 </div>
-                    <form method="POST" action="" class="auth__inputs_lk">
-                                <div class="auth__inputs_inputs"><input class="auth__inputs_input" placeholder="Фамилия" value="" name="surname" type="text"></div>
-                                <div class="auth__inputs_inputs"><input class="auth__inputs_input" placeholder="Имя" value="" name="name" type="text"></div>
-                                <div class="auth__inputs_inputs"><input class="auth__inputs_input" placeholder="Отчество" value="" name="patronymic" type="text"></div>
-                                <div class="auth__inputs_inputs"><input class="auth__inputs_input" placeholder="+(700)202-22-92" value="" name="phone" type="tel"></div>
-                                <div class="auth__inputs_inputs"><input class="auth__inputs_input" placeholder="nazgulenok78@gmail.com" value="" name="email" type="email"></div>
+                    <form method="POST" action="/lk_update" class="auth__inputs_lk">
+                        @csrf
+                                <div class="auth__inputs_inputs"><input class="auth__inputs_input" placeholder="Фамилия" value="{{Auth::user()->surname}}" name="surname" type="text"></div>
+                                <div class="auth__inputs_inputs"><input class="auth__inputs_input" placeholder="Имя" value="{{Auth::user()->name}}" name="name" type="text"></div>
+                                <div class="auth__inputs_inputs"><input class="auth__inputs_input" placeholder="Отчество" value="{{Auth::user()->patronymic}}" name="patronymic" type="text"></div>
+                                <div class="auth__inputs_inputs"><input class="auth__inputs_input" placeholder="+(700)202-22-92" value="{{Auth::user()->telephone}}" name="telephone" type="tel"></div>
+                                <div class="auth__inputs_inputs"><input class="auth__inputs_input" placeholder="nazgulenok78@gmail.com" value="{{Auth::user()->email}}" name="email" type="email"></div>
                                 <div class="article-text-sub">
                                     <p class="applications__text text-gray type">Изменить пароль:</p>
-                                    <input class="auth__inputs_input" placeholder="Введите пароль" type="password" name="repeat_password">
+                                    <input class="auth__inputs_input" placeholder="Введите пароль" type="password" name="password">
                                 </div>
 
                                 <button class="article-button text-black">Сохранить изменения</button>
 
                         </div>
-
-
                             </form>
                         </div>
                     </div>
@@ -48,76 +47,51 @@
         </div>
             <div class="article__title text-black">Журнал заказов</div>
             <div class="order-box">
-            <div class="orders__box">
-                <div class="order__item">
-                    <div class="article-text-sub">
-                        <p class="applications__text text-gray type">Адрес:</p>
-                        <p class="applications__text text-black">Ул. Архитектора Калимуллина, д 4, п 1, кв 76
-                        </p>
-                    </div>
-                    <div class="article-text-sub">
-                        <p class="applications__text text-gray type">Цена:</p>
-                        <p class="applications__text text-black">4000 р.
-                        </p>
-                    </div>
-
-                    <div class="applications__text_container">
-                        <div class="applications__text_box">
-                            <p class="applications__text text-gray type">Тип мусора:</p>
-                            <p class="applications__text text-black">Пластик</p>
-                            <p class="applications__text text-black">Картон</p>
-                        </div>
-                        <div class="applications__text_box">
-                            <p class="applications__text text-gray type">Забрать:</p>
-                            <p class="applications__text text-black">20:00</p>
-                        </div>
-                        <div class="applications__text_box">
-                            <p class="applications__text text-gray type">Номер заказа:</p>
-                            <p class="applications__text text-black">12</p>
-                        </div>
-
-                    </div>
-
-
-                </div>
-
-
-                    <div class="order__item">
-                        <div class="article-text-sub">
-                            <p class="applications__text text-gray type">Адрес:</p>
-                            <p class="applications__text text-black">Ул. Архитектора Калимуллина, д 4, п 1, кв 76
-                            </p>
-                        </div>
-                        <div class="article-text-sub">
-                            <p class="applications__text text-gray type">Цена:</p>
-                            <p class="applications__text text-black">4000 р.
-                            </p>
-                        </div>
-
-                        <div class="applications__text_container">
-                            <div class="applications__text_box">
-                                <p class="applications__text text-gray type">Тип мусора:</p>
-                                <p class="applications__text text-black">Пластик</p>
-                                <p class="applications__text text-black">Картон</p>
-                            </div>
-                            <div class="applications__text_box">
-                                <p class="applications__text text-gray type">Забрать:</p>
-                                <p class="applications__text text-black">20:00</p>
-                            </div>
-                            <div class="applications__text_box">
+                <div class="orders__box">
+                    <? if($applications) { ?>
+                    @foreach($applications as $application)
+                        <div class="order__item">
+                            <div class="article-text-sub">
                                 <p class="applications__text text-gray type">Номер заказа:</p>
-                                <p class="applications__text text-black">12</p>
+                                <p class="applications__text text-black">{{$application->id_app}}</p>
+                            </div>
+
+                            <div class="applications__text_container">
+                                <div class="applications__text_box">
+                                    <p class="applications__text text-gray type">Адрес:</p>
+                                    <p class="applications__text text-black">{{$application->address}}</p>
+                                </div>
+                                <div class="applications__text_box">
+                                    <p class="applications__text text-gray type">Тип мусора:</p>
+                                    <p class="applications__text text-black">{{$application->trashType->type_text}}</p>
+                                </div>
+                                <div class="applications__text_box">
+                                    <p class="applications__text text-gray type">Забрать:</p>
+                                    <p class="applications__text text-black">{{$application->date}}</p>
+                                </div>
+
+                                <div class="applications__text_box">
+                                    <p class="applications__text text-gray type">Комментарий:</p>
+                                    <p class="applications__text text-black">{{$application->comment}}</p>
+                                </div>
+
+                                <div class="applications__text_box">
+                                    <p class="applications__text text-gray type">Статус:</p>
+                                    <p class="applications__text text-black">{{$application->statusApp->status_type}}</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    @endforeach
+                    <? } else { ?>
+                        <div class="article-text-sub">
+                            <p class="applications__text text-gray type">У вас нет заявок</p>
+                        </div>
+                    <? } ?>
                 </div>
-
                 <div class="articles__numbers">
-                    <p>1</p>
-                    <p>2</p>
-                    <p>3</p>
+                {{ $applications->withQueryString()->links('pagination::bootstrap-5') }}
                 </div>
-                </div>
+            </div>
 
 
 

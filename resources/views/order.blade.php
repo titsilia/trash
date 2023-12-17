@@ -12,29 +12,24 @@
                     <div class="order__item_right-text">Наша команда высококвалифицированных специалистов приедет к вашему порогу, чтобы забрать ваш мусор.</div>
                     <div class="order__item_right-text">Мы не побеспокоим вас выполняя нашу работу.  я реально не знаю что писать </div>
                 </div>
-
+        
             </div>
             <div class="order-item order-red bg-red">
                 <div class="article__title text-white">Оформление Заказа</div>
                 <div class="order__info">
                     <div class="order__info_left">
-                        <form method="POST" action="">
-                            <div class="order__inputs_inputs"><input class="order__inputs_input order-ph"placeholder="Фамилия" name="surname" type="text"></div>
-                            <div class="order__inputs_inputs"><input class="order__inputs_input order-ph" placeholder="Имя" name="name" type="text"></div>
-                            <div class="order__inputs_inputs"><input class="order__inputs_input order-ph"placeholder="Отчество" name="patronymic" type="text"></div>
-                            <div class="order__inputs_inputs order-bt"><input class="order__inputs_input order-ph"placeholder="+(700)202-22-92" name="phone" type="tel"></div>
-                            <div class="order__inputs_inputs"><input class="order__inputs_input order-ph"placeholder="nazgulenok78@gmail.com" name="email" type="email"></div>
-                            <div class="order__inputs_inputs"><input class="order__inputs_input order-ph"placeholder="Адрес" name="street" type="text">
+                        <form method="POST" action="/order_create">
+                            @csrf
+                            <div class="order__inputs_inputs"><input class="order__inputs_input order-ph"placeholder="Адрес" name="address" type="text">
                             </div>
                             <div class="order__type">
                                 <div class="order__type_title">Тип мусора:</div>
                                 <div class="order__title_checkbox text-white">
                                     <div class="glass-carton">
-                                        <select name="select">
-                                            <option value="plastic">Пластик</option>
-                                            <option value="carton">Картон</option>
-                                            <option value="glass">Стекло</option>
-                                            <option value="organic">Органика</option>
+                                        <select name="type_trash">
+                                            @foreach ($trashTypes as $item)
+                                            <option value="{{$item->id}}">{{$item->type_text}}</option>
+                                            @endforeach
                                           </select>
                                     </div>
                                 </div>
@@ -48,7 +43,7 @@
                         <div class="order__time">
                             <div class="order__type_title">Время доставки:</div>
                             <div class="time__buttons-one">
-                                <select name="select">
+                                <select name="date">
                                     <option value="8:00">8:00</option>
                                     <option value="10:00">10:00</option>
                                     <option value="12:00">12:00</option>

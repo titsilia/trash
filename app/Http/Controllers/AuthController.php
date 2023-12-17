@@ -83,6 +83,8 @@ class AuthController extends Controller
 
         if ($user_create) {
             return redirect("/auth")->with("success","");
+            
+        } else {
             return redirect()->back()->with("error","Произошла ошибка! Попробуйте снова!");
         }
 

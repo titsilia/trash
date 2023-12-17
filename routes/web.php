@@ -3,6 +3,9 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ArticlesController;
+use App\Http\Controllers\ApplicationController;
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\ProfileController;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,29 +32,29 @@ Route::post('/register_user', [AuthController::class, 'register_user']);
 
 Route::get('/exit', [AuthController::class, 'exit']);
 
+Route::get('/lk', [ProfileController::class, 'lk']);
+
+Route::post('/lk_update', [ProfileController::class, 'lk_update']);
+
 Route::get('/articles', [ArticlesController::class, 'articles']);
 
-Route::get('/article', function () {
-    return view('article');
-});
+Route::get('/articles/{id}', [ArticlesController::class, 'article']);
 
-Route::get('/lk', function () {
-    return view('lk');
-});
+Route::get('/order', [ApplicationController::class, 'order']);
 
-Route::get('/order', function () {
-    return view('order');
-});
-
+Route::post('/order_create', [ApplicationController::class, 'order_create']);
 
 Route::group(['namespace' => 'Admin', 'middleware' => 'admin'], function () {
-    Route::get('/admin/applications', function () {
-        return view('admin.applications');
-    });
+    Route::get('/admin_applications', [AdminController::class, 'admin_applications']);
+
+    Route::get('/admin_applications/{id_app}/confirm', [AdminController::class, 'confirm']);
+    Route::get('/admin_applications/{id_app}/deny', [AdminController::class, 'deny']);
     
-    Route::get('/admin/adminArticle', function () {
-        return view('admin.adminArticle');
-    });
+    Route::get('/admin_articles', [AdminController::class, 'admin_articles']);
+    Route::post('/articles_create', [AdminController::class, 'articles_create']);
+
+    Route::post('/articles_update/{id}', [AdminController::class, 'articles_update']);
+    Route::get('/articles_delete/{id}', [AdminController::class, 'articles_delete']);
 });
 
 

@@ -5,14 +5,10 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Article extends Model
+class Status extends Model
 {
     protected $fillable = [
-        "id",
-        "articles_title",
-        "articles_text",
-        "articles_photo",
+        'id',
+        'status_type',
     ];
-
-    public $timestamps = false;
 }
